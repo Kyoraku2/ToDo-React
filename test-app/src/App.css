@@ -1,0 +1,85 @@
+main{
+  width: 80%;
+  margin: auto;
+  font-size: 1rem;
+}
+
+body{
+  background-color: #17171f;
+  color: #949297;
+}
+
+h1{
+  border-bottom: 1px rgba(121, 121, 121, 0.7) solid;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#addTask, .task{
+  border-radius: 5px;
+  line-height: 2rem;
+  padding: 0.5rem;
+}
+
+.task{
+  list-style: none;
+  background-color: #21212d;
+  margin: 0.5rem 0;
+}
+
+#taskForm{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+#addTask{
+  border: 1px #79787a solid;
+  background-color: #17171f;
+  margin: 1rem auto;
+  background-repeat: no-repeat;
+  background-position: 0.5rem center;
+  color: #949297;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  width: 80%;
+}
+
+#taskForm > input[type="submit"]{
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  border: none;
+  background-color: #17171f;
+  background-image: url(../public/assets/images/plus.svg);
+  background-size: 3rem;
+  transform: translateY(25%);
+}
+
+.done, .delete{
+  cursor: pointer;
+}
+
+.checked{
+  text-decoration-line: line-through;
+}
+
+.done{
+  border: none;
+  height: 1rem;
+  width: 1rem;
+  vertical-align: -0.1rem;
+}
+
+.delete{
+  float: right;
+  margin: 0.5rem 0.5rem 0 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: #949297;
+  border: none;
+  border-radius: 100%;
+  background-image: url(../public/assets/images/remove.svg);
+  background-size: cover;
+}
