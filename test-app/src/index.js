@@ -10,3 +10,17 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+
+document.addEventListener("DOMContentLoaded",function(e){
+  document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey && e.key === 'd') {
+        e.preventDefault();
+        var body = document.querySelector('body');
+        if(body.className==='dark'){
+            body.className='';
+        }else{
+            body.className='dark';
+        }
+    }
+  });
+})

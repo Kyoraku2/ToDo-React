@@ -9,7 +9,7 @@ const List = (props) => {
   })
   return (
   <div className='todoList'>
-    <h1>Things to do :)</h1>
+    <h1>To-Do list</h1>
     <Form handleSubmit={props.handleSubmit}/>
     <ul>
       {rows}

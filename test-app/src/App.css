@@ -5,12 +5,25 @@ main{
 }
 
 body{
-  background-color: #17171f;
-  color: #949297;
+  --backgroundColor: #17171f;
+  --textColor: #949297;
+  --borderColor: #79787a;
+  --taskBackground:#21212d;
+  --underTitleColor:rgba(121, 121, 121, 0.7);
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+}
+
+body.dark{
+  --backgroundColor: white;
+  --textColor: black;
+  --borderColor: #79787a;
+  --taskBackground: lightgrey;
+  --underTitleColor:rgba(121, 121, 121, 0.7);
 }
 
 h1{
-  border-bottom: 1px rgba(121, 121, 121, 0.7) solid;
+  border-bottom: 1px var(--underTitleColor) solid;
   padding-bottom: 1rem;
   text-align: center;
 }
@@ -23,7 +36,7 @@ h1{
 
 .task{
   list-style: none;
-  background-color: #21212d;
+  background-color: var(--taskBackground);
   margin: 0.5rem 0;
 }
 
@@ -35,12 +48,12 @@ h1{
 }
 
 #addTask{
-  border: 1px #79787a solid;
-  background-color: #17171f;
+  border: 1px var(--borderColor) solid;
+  background-color: var(--backgroundColor);
   margin: 1rem auto;
   background-repeat: no-repeat;
   background-position: 0.5rem center;
-  color: #949297;
+  color: var(--textColor);
   font-size: 1.25rem;
   line-height: 2.25rem;
   width: 80%;
@@ -51,7 +64,7 @@ h1{
   height: 3rem;
   margin-left: 1rem;
   border: none;
-  background-color: #17171f;
+  background-color: var(--backgroundColor);
   background-image: url(../public/assets/images/plus.svg);
   background-size: 3rem;
   transform: translateY(25%);
@@ -77,7 +90,7 @@ h1{
   margin: 0.5rem 0.5rem 0 0;
   height: 1rem;
   width: 1rem;
-  background-color: #949297;
+  background-color: var(--textColor);
   border: none;
   border-radius: 100%;
   background-image: url(../public/assets/images/remove.svg);

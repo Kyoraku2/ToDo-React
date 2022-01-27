@@ -17,7 +17,7 @@ class ListElement extends Component {
     render() {
         const {description,index} = this.props;
         return (
-            <li className='task' id={"task"+index}><input type="checkbox" className='done' onChange={() => this.check(index)}></input> {description} <button className='modify' onClick={() => this.remove(index)}></button></li>
+            <li className='task' id={"task"+index}><input type="checkbox" className='done' onChange={() => this.check(index)}></input> {description} <button className='delete' onClick={() => this.remove(index)}></button></li>
         )
     }
 }
